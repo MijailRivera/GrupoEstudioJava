@@ -1,0 +1,24 @@
+package com.gsjava.ejercicios;
+
+import java.util.Scanner;
+
+public class AVacaciones {
+	
+	private String datos;
+	private Integer clave;
+	private Integer aniosServicio;
+	public static void main(String[] args) {
+		System.out.println("Hola Mundo");
+	}
+	
+	public void ingresarDatosTrabajador() {
+		System.out.println("Ingrese nombres completos: ");
+		
+		System.out.println("Ingrese Clave Departamento");
+		System.out.println("Ingrese años de Servicios");
+	}
+
+	public void calcularVacaciones(){
+		
+	}
+}

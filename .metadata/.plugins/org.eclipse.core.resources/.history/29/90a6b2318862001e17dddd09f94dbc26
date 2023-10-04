@@ -1,0 +1,52 @@
+package com.gsjava.ejercicios;
+
+import java.util.Scanner;
+
+public class AVacaciones {
+
+	private String datos;
+	private Integer clave;
+	private Integer aniosServicio;
+	
+
+	public static void main(String[] args) {
+		System.out.println("Hola Mundo");
+	}
+
+	public void ingresarDatosTrabajador() {
+		System.out.println("Ingrese nombres completos: ");		
+		System.out.println("Ingrese Clave Departamento");
+		System.out.println("Ingrese años de Servicios");
+	}
+
+	public Integer calcularVacaciones(Integer clave, Integer aniosServicio){
+		Integer intCantidadVacaciones;
+		if(clave.equals(1)) {
+			if(aniosServicio.equals(1)) {
+				intCantidadVacaciones = 6;
+			}else if(2<=aniosServicio && aniosServicio<=6) {
+				intCantidadVacaciones = 14;
+			}else if(7<=aniosServicio) {
+				intCantidadVacaciones = 20;
+			}
+		}else if (clave.equals(2)){
+			if(aniosServicio.equals(1)) {
+				intCantidadVacaciones = 7;
+			}else if(2<=aniosServicio && aniosServicio<=6) {
+				intCantidadVacaciones = 15;
+			}else if(7<=aniosServicio) {
+				intCantidadVacaciones = 22;
+			}
+		}else if (clave.equals(3)){
+			if(aniosServicio.equals(1)) {
+				intCantidadVacaciones = 10;
+			}else if(2<=aniosServicio && aniosServicio<=6) {
+				intCantidadVacaciones = 20;
+			}else if(7<=aniosServicio) {
+				intCantidadVacaciones = 30;
+			}
+		}
+		
+		return intCantidadVacaciones;
+	}
+}
